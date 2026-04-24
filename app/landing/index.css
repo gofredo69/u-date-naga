@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
+@theme {
+  --gradient-brand: linear-gradient(to right, #ec4899, #f43f5e);
+}
+
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+.gradient-brand {
+  background: linear-gradient(to right, #ec4899, #f43f5e);
+}
+
+.gradient-brand:hover {
+  background: linear-gradient(to right, #db2777, #e11d48);
 }
