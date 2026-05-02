@@ -33,9 +33,7 @@ export function Navbar() {
             height={40}
             className="sm:w-14 sm:h-14 object-contain"
           />
-          <span className="font-extrabold text-xl sm:text-2xl tracking-tight" style={{ color: '#D53F8C' }}>
-            UDate Naga
-          </span>
+          <span className="font-extrabold text-xl sm:text-2xl tracking-tight" style={{ color: '#D53F8C', fontFamily: "'Ramabhadra', sans-serif" }}><span style={{ fontWeight: 700 }}>UDate</span> Naga</span>
         </div>
 
         {/* Desktop Navigation */}

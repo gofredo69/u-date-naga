@@ -2,11 +2,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { LoginCard } from './components/LoginCard';
 
 export function App() {
   return (
-    <div className="min-h-screen flex flex-col relative overflow-hidden font-sans selection:bg-[#D53F8C] selection:text-white" style={{ backgroundColor: '#ffffff' }}>
+    <div className="min-h-screen flex flex-col relative overflow-hidden font-sans selection:bg-[#D53F8C] selection:text-white" style={{ background: '#fffdd0' }}>
       
       {/* Header */}
       <header className="absolute top-0 left-0 w-full p-4 md:p-6 z-20">
@@ -23,18 +24,16 @@ export function App() {
             duration: 0.5
           }}
           className="flex justify-center md:justify-start w-full">
-          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-3">
-            <Image
-              src="/assets/images/U-date_logo.png"
-              alt="UDate Naga logo"
-              width={80}
-              height={80}
-              className="md:w-10 md:h-10 object-contain"
-            />
-            <span className="text-3xl md:text-2xl font-bold tracking-tight" style={{ color: '#D53F8C' }}>
-              UDate Naga
-            </span>
-          </div>
+<Link href="/" className="flex flex-col md:flex-row items-center gap-2 md:gap-3">
+              <Image
+                src="/assets/images/U-date_logo.png"
+                alt="UDate Naga logo"
+                width={80}
+                height={80}
+                className="md:w-10 md:h-10 object-contain"
+              />
+              <span className="text-3xl md:text-2xl tracking-tight" style={{ color: '#D53F8C', fontFamily: "'Ramabhadra', sans-serif" }}><span style={{ fontWeight: 700 }}>UDate</span> Naga</span>
+            </Link>
         </motion.div>
       </header>
 
@@ -55,10 +54,10 @@ export function App() {
           }}
           className="text-center mb-8 md:mb-10 max-w-2xl mx-auto mt-5 md:mt-0">
           
-          <h1 className="text-4xl md:text-3xl font-bold text-gray-900 mb-4 tracking-tight mt-5">
+          <h1 className="text-4xl md:text-3xl font-bold mb-4 tracking-tight mt-5" style={{ color: '#1a1a2e' }}>
             Welcome Back!
           </h1>
-          <p className="text-base text-gray-600 font-medium max-w-xl mx-auto leading-relaxed">
+          <p className="text-base font-medium max-w-xl mx-auto leading-relaxed" style={{ color: '#1a1a2e' }}>
             Sign in to connect with peers from your campus and explore other
             universities in Naga City.
           </p>
@@ -70,8 +69,8 @@ export function App() {
 
       {/* Footer */}
       <footer className="absolute bottom-0 w-full py-4 sm:py-6 text-center z-10">
-        <p className="text-xs sm:text-sm text-gray-500 font-medium">
-          © {new Date().getFullYear()} UDate Naga. Connecting campuses.
+        <p className="text-xs sm:text-sm font-medium" style={{ color: '#1a1a2e', fontFamily: "'Ramabhadra', sans-serif" }}>
+          © {new Date().getFullYear()} <span style={{ fontWeight: 700 }}>UDate</span> Naga. Connecting campuses.
         </p>
       </footer>
     </div>

@@ -3,21 +3,39 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Search, Heart, MessageCircle } from 'lucide-react';
 
-const steps = [
+interface Step {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  delay?: number;
+  iconColor?: string;
+  bgColor?: string;
+}
+
+const steps: Step[] = [
   {
     icon: <Search className="w-10 h-10" />,
     title: '1. Discover',
     description: 'Browse profiles of students from your campus and nearby universities.',
+    delay: 0,
+    iconColor: '#DC2626',
+    bgColor: '#FEE2E2',
   },
   {
     icon: <Heart className="w-10 h-10" />,
     title: '2. Match',
     description: 'When you both like each other, it\'s a match! Start a conversation.',
+    delay: 0.1,
+    iconColor: '#DB2777',
+    bgColor: '#FCE7F3',
   },
   {
     icon: <MessageCircle className="w-10 h-10" />,
     title: '3. Connect',
     description: 'Chat in real-time and build meaningful connections.',
+    delay: 0.2,
+    iconColor: '#2563EB',
+    bgColor: '#DBEAFE',
   },
 ];
 
@@ -69,17 +87,17 @@ export function FeaturesSection() {
               }}
               transition={{
                 duration: 0.5,
-                delay: step.delay || index * 0.1
+                delay: step.delay
               }}
-              className="bg-white rounded-2xl p-6 sm:p-8 text-center shadow-sm hover:shadow-md transition-shadow">
-              
+className="bg-white rounded-2xl p-6 sm:p-8 text-center shadow-sm hover:shadow-md transition-shadow">
+               
               <div 
                 className="w-14 h-14 sm:w-16 sm:w-20 sm:h-20 rounded-full mx-auto flex items-center justify-center mb-4 sm:mb-6"
-                style={{ backgroundColor: `${index === 0 ? '#FEE2E2' : index === 1 ? '#FCE7F3' : '#DBEAFE'}` }}>
-                <div className="sm:hidden" style={{ color: index === 0 ? '#DC2626' : index === 1 ? '#DB2777' : '#2563EB' }}>
-                  {React.cloneElement(step.icon as React.ReactElement, { className: "w-6 h-6" })}
+                style={{ backgroundColor: step.bgColor }}>
+                <div className="sm:hidden" style={{ color: step.iconColor }}>
+                  {step.icon}
                 </div>
-                <div className="hidden sm:block" style={{ color: index === 0 ? '#DC2626' : index === 1 ? '#DB2777' : '#2563EB' }}>
+                <div className="hidden sm:block" style={{ color: step.iconColor }}>
                   {step.icon}
                 </div>
               </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export function Footer() {
   return (
@@ -14,23 +15,23 @@ export function Footer() {
               height={48}
               className="sm:w-16 sm:h-16 object-contain"
             />
-            <span className="font-bold text-xl sm:text-2xl md:text-3xl text-white">UDate Naga</span>
+            <span className="text-xl sm:text-2xl md:text-3xl tracking-tight" style={{ fontFamily: "'Ramabhadra', sans-serif", color: 'white' }}><span style={{ fontWeight: 700 }}>UDate</span> <span style={{ fontWeight: 700 }}>Naga</span></span>
           </div>
 
           <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 text-xs sm:text-sm font-medium text-gray-400">
-            <a href="#" className="hover:text-white transition-colors">
+            <Link href="/legal" className="hover:text-white transition-colors">
               Privacy Policy
-            </a>
-            <a href="#" className="hover:text-white transition-colors">
+            </Link>
+            <Link href="/legal" className="hover:text-white transition-colors">
               Terms of Service
-            </a>
+            </Link>
             <a href="#" className="hover:text-white transition-colors">
               Contact
             </a>
           </div>
 
-          <div className="text-xs sm:text-sm text-gray-500">
-            © {new Date().getFullYear()} UDate Naga. All rights reserved.
+          <div className="text-xs sm:text-sm text-gray-500" style={{ fontFamily: "'Ramabhadra', sans-serif" }}>
+            © {new Date().getFullYear()} <span style={{ fontWeight: 700 }}>UDate</span> Naga. All rights reserved.
           </div>
         </div>
       </div>

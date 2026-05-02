@@ -146,7 +146,10 @@ export function LoginCard() {
         </div>
         
         <p className="text-center text-sm" style={{ color: '#151717', margin: '5px 0' }}>
-          Don&apos;t have an account? <span style={{ color: '#2d79f3', fontWeight: 500, cursor: 'pointer' }}>Sign up</span>
+          Don&apos;t have an account?{' '}
+          <Link href="/signup" style={{ color: '#2d79f3', fontWeight: 500 }}>
+            Sign up
+          </Link>
         </p>
       </form>
     </motion.div>

@@ -13,100 +13,90 @@ export function BackgroundIllustration() {
             height="300"
             patternUnits="userSpaceOnUse">
             
-            {/* Building 1 */}
+            {/* Large Heart */}
             <path
-              d="M50 250 L50 170 L90 130 L130 170 L130 250 Z"
-              fill="none"
-              stroke="#1A1A1A"
-              strokeWidth="2" />
-            
-            <rect
-              x="65"
-              y="185"
-              width="15"
-              height="20"
-              fill="none"
-              stroke="#1A1A1A"
-              strokeWidth="1.5" />
-            
-            <rect
-              x="95"
-              y="185"
-              width="15"
-              height="20"
-              fill="none"
-              stroke="#1A1A1A"
-              strokeWidth="1.5" />
-
-            {/* Building 2 */}
-            <rect
-              x="180"
-              y="150"
-              width="70"
-              height="100"
-              fill="none"
-              stroke="#1A1A1A"
-              strokeWidth="2" />
-            
-            <rect
-              x="195"
-              y="165"
-              width="12"
-              height="16"
-              fill="none"
-              stroke="#1A1A1A"
-              strokeWidth="1.5" />
-            
-            <rect
-              x="215"
-              y="165"
-              width="12"
-              height="16"
-              fill="none"
-              stroke="#1A1A1A"
-              strokeWidth="1.5" />
-            
-            <rect
-              x="195"
-              y="195"
-              width="12"
-              height="16"
-              fill="none"
-              stroke="#1A1A1A"
-              strokeWidth="1.5" />
-
-            {/* Dotted Lines */}
-            <path
-              d="M130 200 Q 155 170 180 200"
+              d="M150 230 C 150 230, 100 190, 100 150 C 100 120, 125 100, 150 130 C 175 100, 200 120, 200 150 C 200 190, 150 230, 150 230 Z"
               fill="none"
               stroke="#D53F8C"
-              strokeWidth="2"
-              strokeDasharray="4,4" />
+              strokeWidth="2" />
 
+            {/* Small Heart 1 */}
             <path
-              d="M90 130 Q 135 50 215 150"
-              fill="none"
-              stroke="#D53F8C"
-              strokeWidth="2"
-              strokeDasharray="4,4" />
-
-            {/* Speech Bubbles */}
-            <path
-              d="M140 100 C 140 85, 170 85, 170 100 C 170 115, 148 115, 140 122 C 143 115, 140 108, 140 100 Z"
+              d="M60 80 C 60 80, 35 55, 35 35 C 35 15, 50 5, 60 20 C 70 5, 85 15, 85 35 C 85 55, 60 80, 60 80 Z"
               fill="#D53F8C" />
 
+            {/* Small Heart 2 */}
             <path
-              d="M250 60 C 250 45, 280 45, 280 60 C 280 75, 258 75, 250 82 C 253 75, 250 68, 250 60 Z"
+              d="M240 200 C 240 200, 220 180, 220 165 C 220 150, 232 142, 240 155 C 248 142, 260 150, 260 165 C 260 180, 240 200, 240 200 Z"
               fill="#D53F8C" />
 
+            {/* Small Heart 3 */}
             <path
-              d="M30 80 C 30 65, 60 65, 60 80 C 60 95, 38 95, 30 102 C 33 95, 30 88, 30 80 Z"
+              d="M180 50 C 180 50, 165 35, 165 25 C 165 15, 172 10, 180 18 C 188 10, 195 15, 195 25 C 195 35, 180 50, 180 50 Z"
               fill="#D53F8C" />
+
+            {/* Small Heart 4 */}
+            <path
+              d="M30 180 C 30 180, 20 170, 20 160 C 20 152, 25 148, 30 155 C 35 148, 40 152, 40 160 C 40 170, 30 180, 30 180 Z"
+              fill="#D53F8C" />
+
+            {/* Small Heart 5 */}
+            <path
+              d="M270 100 C 270 100, 258 88, 258 76 C 258 66, 266 60, 270 70 C 274 60, 282 66, 282 76 C 282 88, 270 100, 270 100 Z"
+              fill="#D53F8C" />
+
+            {/* Floating Hearts */}
+            <circle cx="120" cy="60" r="8" fill="none" stroke="#D53F8C" strokeWidth="1.5" />
+            <circle cx="220" cy="280" r="6" fill="none" stroke="#D53F8C" strokeWidth="1.5" />
+            <circle cx="50" cy="260" r="5" fill="none" stroke="#D53F8C" strokeWidth="1.5" />
+            <circle cx="260" cy="50" r="7" fill="none" stroke="#D53F8C" strokeWidth="1.5" />
 
             {/* Decorative dots */}
-            <circle cx="155" cy="60" r="2" fill="#D53F8C" />
-            <circle cx="230" cy="100" r="3" fill="#D53F8C" />
-            <circle cx="80" cy="230" r="2" fill="#D53F8C" />
+            <circle cx="100" cy="120" r="2" fill="#D53F8C" />
+            <circle cx="200" cy="80" r="2" fill="#D53F8C" />
+            <circle cx="140" cy="280" r="2" fill="#D53F8C" />
+            <circle cx="80" cy="40" r="2" fill="#D53F8C" />
+            <circle cx="230" cy="140" r="2" fill="#D53F8C" />
+            <circle cx="20" cy="120" r="2" fill="#D53F8C" />
+
+            {/* Small decorative hearts */}
+            <path
+              d="M230 240 C 230 240, 222 232, 222 225 C 222 219, 226 216, 230 221 C 234 216, 238 219, 238 225 C 238 232, 230 240, 230 240 Z"
+              fill="none"
+              stroke="#D53F8C"
+              strokeWidth="1" />
+
+            <path
+              d="M70 140 C 70 140, 64 134, 64 128 C 64 122, 67 120, 70 124 C 73 120, 76 122, 76 128 C 76 134, 70 140, 70 140 Z"
+              fill="none"
+              stroke="#D53F8C"
+              strokeWidth="1" />
+
+            <path
+              d="M140 180 C 140 180, 135 175, 135 170 C 135 166, 137 164, 140 167 C 143 164, 145 166, 145 170 C 145 175, 140 180, 140 180 Z"
+              fill="none"
+              stroke="#D53F8C"
+              strokeWidth="1" />
+
+            {/* Connection lines */}
+            <path
+              d="M35 35 Q 70 30, 100 50"
+              fill="none"
+              stroke="#D53F8C"
+              strokeWidth="1"
+              strokeDasharray="3,3" />
+            <path
+              d="M200 50 Q 180 40, 165 25"
+              fill="none"
+              stroke="#D53F8C"
+              strokeWidth="1"
+              strokeDasharray="3,3" />
+            <path
+              d="M240 165 Q 230 140, 220 130"
+              fill="none"
+              stroke="#D53F8C"
+              strokeWidth="1"
+              strokeDasharray="3,3" />
           </pattern>
         </defs>
         <rect

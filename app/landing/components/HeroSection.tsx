@@ -31,7 +31,7 @@ export function HeroSection() {
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text'
             }}>
-              Naga&apos;s Universities and Colleges
+              Naga City&apos;s Universities and Colleges
             </span>
           </motion.div>
 
